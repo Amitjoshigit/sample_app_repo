@@ -1,17 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: backstage-service
+  name: backstage
   namespace: backstage
-  labels:
-    app: backstage
 spec:
-  type: ClusterIP
-  ports:
-    - port: 80
-      targetPort: http
-      protocol: TCP
-      name: http
+  type: LoadBalancer
   selector:
     app: backstage
-    version: v1
+  ports:
+    - name: http
+      port: 80
+      targetPort: 80
