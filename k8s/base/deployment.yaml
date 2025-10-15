@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: backstage
-          image: 993326153624.dkr.ecr.ap-south-1.amazonaws.com/backstage:39e0b4a3af30a42d23585b813eb48d40978dc2e8
+          image: 993326153624.dkr.ecr.ap-south-1.amazonaws.com/backstage:a6e14b197b488b0c289e9997e15ca68052a7b2a7
           ports:
             - containerPort: 80
               name: http
